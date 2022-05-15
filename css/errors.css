@@ -125,3 +125,32 @@ footer {
     opacity: 1;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fafafa;
+    background: #111110;
+  }
+
+  .error-description {
+    color: inherit;
+  }
+
+  .home-btn {
+    color: #41b883c1;
+    border: 0.0987rem solid #41b883c1;
+  }
+  
+  .home-btn:hover {
+    color: #fafafa;
+    background-color: #41b883c1;
+  }
+
+  footer > a:hover {
+    color: #41b883c1;
+  }
+
+  .link {
+    color: #41b883c1;
+  }
+}
