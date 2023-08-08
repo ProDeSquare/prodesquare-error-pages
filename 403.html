@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProDeSquare | Forbidden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono&family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="./css/errors.css" as="style" />
+    <link rel="stylesheet" href="./css/errors.css" />
+    <link
+      rel="shortcut icon"
+      href="https://prodesquare.com/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ProDeSquare | Forbidden</title>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" as="style" />
-  <link rel="preload" href="./css/errors.css" as="style" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/errors.css" />
-  <link rel="shortcut icon" href="https://prodesquare.com/favicon.ico" type="image/x-icon" />
-</head>
+  <body>
+    <div>
+      <main>
+        <h1 class="error-code">Error 403</h1>
 
-<body>
-  <div>
-    <main>
-      <h1 class="error-code">403</h1>
+        <h3 class="error-title">&lt;Forbidden /&gt;</h3>
 
-      <h3 class="error-title">Forbidden.</h3>
+        <p class="error-description">
+          Access to this resource on the server is denied!
+        </p>
 
-      <p class="error-description"> Access to this resource on the server is denied! </p>
+        <div class="home-btn-container">
+          <a class="home-btn enlarge" href="https://prodesquare.com/"
+            >&larr; Go home</a
+          >
+        </div>
+      </main>
 
-      <div class="home-btn-container">
-        <a class="home-btn enlarge" href="https://prodesquare.com/">&larr; Go home</a>
-      </div>
-    </main>
+      <footer>
+        &copy; <a href="https://prodesquare.com/">ProDeSquare</a>
+        <span id="current-year"></span>
+      </footer>
+    </div>
 
-    <footer> &copy; <a href="https://prodesquare.com/">ProDeSquare</a> <span id="current-year"></span> </footer>
-  </div>
-
-  <script>document.querySelector("#current-year").innerText = new Date().getFullYear(); </script>
-</body>
-
+    <script>
+      document.querySelector("#current-year").innerText =
+        new Date().getFullYear();
+    </script>
+  </body>
 </html>

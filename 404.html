@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProDeSquare | Not Found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono&family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="./css/errors.css" as="style" />
+    <link rel="stylesheet" href="./css/errors.css" />
+    <link
+      rel="shortcut icon"
+      href="https://prodesquare.com/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ProDeSquare | Not Found</title>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" as="style" />
-  <link rel="preload" href="./css/errors.css" as="style" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/errors.css" />
-  <link rel="shortcut icon" href="https://prodesquare.com/favicon.ico" type="image/x-icon" />
-</head>
+  <body>
+    <div>
+      <main>
+        <h1 class="error-code">Error 404</h1>
 
-<body>
-  <div>
-    <main>
-      <h1 class="error-code">404</h1>
+        <h3 class="error-title">&lt;Not Found /&gt;</h3>
 
-      <h3 class="error-title">Not Found.</h3>
+        <p class="error-description">
+          The page you're looking for couldn't be found on the server. It may
+          have been removed or moved to another location. Why not visit
+          <a class="link" href="https://v1.prodesquare.com/"
+            >Previous Version</a
+          >
+          of ProDeSquare.
+        </p>
 
-      <p class="error-description"> The page you're looking for couldn't be found on the server. It may have been
-        removed or moved to another location. Why not visit <a class="link" href="https://v1.prodesquare.com/">Previous
-          Version</a> of ProDeSquare. </p>
+        <div class="home-btn-container">
+          <a class="home-btn enlarge" href="https://prodesquare.com/"
+            >&larr; Go home</a
+          >
+        </div>
+      </main>
 
-      <div class="home-btn-container">
-        <a class="home-btn enlarge" href="https://prodesquare.com/">&larr; Go home</a>
-      </div>
-    </main>
+      <footer>
+        &copy; <a href="https://prodesquare.com/">ProDeSquare</a>
+        <span id="current-year"></span>
+      </footer>
+    </div>
 
-    <footer> &copy; <a href="https://prodesquare.com/">ProDeSquare</a> <span id="current-year"></span> </footer>
-  </div>
-
-  <script>document.querySelector("#current-year").innerText = new Date().getFullYear(); </script>
-</body>
-
+    <script>
+      document.querySelector("#current-year").innerText =
+        new Date().getFullYear();
+    </script>
+  </body>
 </html>
