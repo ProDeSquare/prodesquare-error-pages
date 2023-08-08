@@ -5,8 +5,8 @@
 }
 
 body {
-  background: #ffffff;
-  color: #273849;
+  background: #10101a;
+  color: #ffffff;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-smooth: antialiased;
@@ -19,7 +19,7 @@ body {
 }
 
 .error-code {
-  font-size: 4.5rem;
+  font-size: 4.65rem;
   line-height: 1;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -34,14 +34,14 @@ body {
 
 .error-description {
   margin-top: 1.8rem;
-  color: #7a7a7a;
+  color: #ffffffd0;
   max-width: 510px;
   line-height: 1.7;
   font-size: 1.2rem;
 }
 
 .link {
-  color: #41b883;
+  color: #2fd49c;
   text-decoration: none;
 }
 
@@ -52,11 +52,11 @@ body {
 
 .home-btn {
   text-decoration: none;
-  color: #41b883;
+  color: #2fd49c;
   display: inline-block;
   margin: 2rem 0;
   padding: 1rem 3rem;
-  border: 0.0987rem solid #41b883;
+  border: 0.0987rem solid #2fd49c;
   border-radius: 0.35rem;
   text-transform: uppercase;
   font-size: 1.1rem;
@@ -67,7 +67,7 @@ body {
 
 .home-btn:hover {
   color: #ffffff;
-  background-color: #41b883;
+  background-color: #2fd49c;
 }
 
 .enlarge {
@@ -88,7 +88,7 @@ footer > a {
 }
 
 footer > a:hover {
-  color: #41b883;
+  color: #2fd49c;
   text-decoration: underline;
 }
 
@@ -124,34 +124,5 @@ footer {
   to {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    color: #fafafa;
-    background: #111110;
-  }
-
-  .error-description {
-    color: inherit;
-  }
-
-  .home-btn {
-    color: #41b883c1;
-    border: 0.0987rem solid #41b883c1;
-  }
-  
-  .home-btn:hover {
-    color: #fafafa;
-    background-color: #41b883c1;
-  }
-
-  footer > a:hover {
-    color: #41b883c1;
-  }
-
-  .link {
-    color: #41b883c1;
   }
 }
