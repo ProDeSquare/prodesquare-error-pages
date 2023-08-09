@@ -22,6 +22,24 @@ body {
   color: $foreground;
 }
 
+.container {
+  position: relative;
+
+  .spotlight {
+    position: absolute;
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(
+      300px,
+      rgba(23, 100, 168, 0.175),
+      transparent 80%
+    );
+    transform: translate(-50%);
+    pointer-events: none;
+  }
+}
+
 .font-normal {
   font-weight: 400;
 }
