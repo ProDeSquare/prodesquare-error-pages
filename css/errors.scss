@@ -1,6 +1,7 @@
 $background: #10101a;
 $foreground: #ffffff;
 $primary: #2fd49c;
+$dim: #fffffa;
 
 * {
   margin: 0;
@@ -37,6 +38,16 @@ body {
   @extend .font-normal;
 }
 
+.gradient-primary {
+  background: linear-gradient(to right, #43e97b, #38f9d7);
+}
+
+.text-gradient {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 h1,
 h2,
 h3 {
@@ -47,6 +58,8 @@ h3 {
   font-size: 4.65rem;
 
   @extend .font-heading;
+  @extend .text-gradient;
+  @extend .gradient-primary;
 }
 
 .error-title {
@@ -60,13 +73,19 @@ h3 {
   font-size: 1.2rem;
   max-width: 510px;
   line-height: 1.7;
+  color: $dim;
 }
 
 .home-btn {
   text-decoration: none;
-  display: flex;
-  margin: 2rem 0;
-  color: $primary;
+  display: inline-flex;
+  margin: 0.75rem 0 1.75rem 0;
+  padding: 0.75rem 1.25rem;
+  color: $background;
+  border-radius: 0.3rem;
+  font-weight: 500;
+
+  @extend .gradient-primary;
 }
 
 footer {
