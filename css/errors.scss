@@ -20,3 +20,65 @@ body {
   background-color: $background;
   color: $foreground;
 }
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-heading {
+  font-family: "Bebas Neue", sans-serif;
+
+  @extend .font-normal;
+}
+
+.font-mono {
+  font-family: "DM Mono", monospace;
+
+  @extend .font-normal;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+.error-code {
+  font-size: 4.65rem;
+
+  @extend .font-heading;
+}
+
+.error-title {
+  font-size: 2rem;
+
+  @extend .font-mono;
+}
+
+.error-description {
+  margin-top: 1.8rem;
+  font-size: 1.2rem;
+  max-width: 510px;
+  line-height: 1.7;
+}
+
+.home-btn {
+  text-decoration: none;
+  display: flex;
+  margin: 2rem 0;
+  color: $primary;
+}
+
+footer {
+  font-size: 1.1rem;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s color ease-out;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
