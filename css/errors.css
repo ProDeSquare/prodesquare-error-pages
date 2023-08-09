@@ -1,156 +1,139 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  background: #ffffff;
-  color: #273849;
-  font-family: "Nunito", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   max-width: 960px;
   margin: 0 auto;
   padding: 2rem;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #10101a;
+  color: #ffffff;
+  -webkit-tap-highlight-color: rgba(47, 212, 156, 0.1);
+}
+
+:-moz-selection {
+  background: rgba(47, 212, 156, 0.3);
+}
+
+::-moz-selection {
+  background: rgba(47, 212, 156, 0.3);
+}
+
+::selection {
+  background: rgba(47, 212, 156, 0.3);
+}
+
+.container {
+  position: relative;
+}
+
+.container .spotlight {
+  position: absolute;
+  z-index: -1;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(300px, rgba(23, 100, 168, 0.175), transparent 80%);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  pointer-events: none;
+}
+
+.font-normal, .font-heading, .error-code, .font-mono, .error-title {
+  font-weight: 400;
+}
+
+.font-heading, .error-code {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.font-mono, .error-title {
+  font-family: "DM Mono", monospace;
+}
+
+.gradient-primary, .error-code, .home-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#43e97b), to(#38f9d7));
+  background: linear-gradient(to right, #43e97b, #38f9d7);
+}
+
+.text-gradient, .error-code {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+.site-logo {
+  height: 5rem;
+  margin-bottom: 0.85rem;
 }
 
 .error-code {
-  font-weight: 600;
-  font-size: 6rem;
-  line-height: 1;
+  font-size: 4.65rem;
 }
 
 .error-title {
-  font-weight: 600;
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 2rem;
 }
 
 .error-description {
   margin-top: 1.8rem;
-  color: #7a7a7a;
-  max-width: 500px;
-  line-height: 1.7;
   font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.link {
-  color: #41b883;
-  text-decoration: none;
-}
-
-.link:hover {
-  color: #359469;
-  text-decoration: underline;
+  max-width: 510px;
+  line-height: 1.7;
+  color: #fffffa;
 }
 
 .home-btn {
   text-decoration: none;
-  color: #41b883;
-  display: inline-block;
-  margin: 2rem 0;
-  padding: 1rem 3rem;
-  border: 0.0987rem solid #41b883;
-  border-radius: 0.35rem;
-  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0.75rem 0 1.75rem 0;
+  padding: 0.75rem 1.25rem;
+  color: #10101a;
+  border-radius: 0.3rem;
+  font-weight: 500;
+}
+
+.home-btn svg {
+  width: 1.3rem;
+}
+
+.home-btn span {
+  margin-left: 0.65rem;
   text-transform: uppercase;
-  font-size: 1.1rem;
-  letter-spacing: 0.1rem;
-  user-select: none;
-  transition: all 0.3s ease-in;
-}
-
-.home-btn:hover {
-  color: #ffffff;
-  background-color: #41b883;
-}
-
-.enlarge {
-  transition: all 0.3s ease-in;
-}
-
-.enlarge:hover {
-  transform: scale(1.1);
+  letter-spacing: 0.05rem;
 }
 
 footer {
   font-size: 1.1rem;
 }
 
-footer > a {
+footer a {
   color: inherit;
   text-decoration: none;
-  font-weight: 600;
+  -webkit-transition: 0.3s color ease-out;
+  transition: 0.3s color ease-out;
 }
 
-footer > a:hover {
-  color: #41b883;
-  text-decoration: underline;
+footer a:hover {
+  color: #2fd49c;
 }
-
-.error-code,
-.error-title,
-.error-description,
-.home-btn-container,
-footer {
-  animation: fadeInUp 0.5s forwards;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  opacity: 0;
-}
-
-.error-title {
-  animation-delay: 0.5s;
-}
-.error-description {
-  animation-delay: 0.75s;
-}
-.home-btn-container {
-  animation-delay: 1s;
-}
-footer {
-  animation-delay: 1.25s;
-}
-
-@keyframes fadeInUp {
-  from {
-    transform: translateY(25px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    color: #fafafa;
-    background: #111110;
-  }
-
-  .error-description {
-    color: inherit;
-  }
-
-  .home-btn {
-    color: #41b883c1;
-    border: 0.0987rem solid #41b883c1;
-  }
-  
-  .home-btn:hover {
-    color: #fafafa;
-    background-color: #41b883c1;
-  }
-
-  footer > a:hover {
-    color: #41b883c1;
-  }
-
-  .link {
-    color: #41b883c1;
-  }
-}
+/*# sourceMappingURL=errors.css.map */
