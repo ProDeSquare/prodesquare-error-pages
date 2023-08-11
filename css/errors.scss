@@ -142,3 +142,22 @@ footer {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .site-logo {
+    height: 4rem;
+  }
+
+  .error-code {
+    font-size: 3.5rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .error-title {
+    font-size: 1.5rem;
+  }
+
+  .error-description {
+    margin-top: 1rem;
+  }
+}
